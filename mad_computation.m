@@ -6,7 +6,7 @@ inPath = 'matlab_output_revised_2017.10.18_14_37_42';
 %===============================================================================
 % main
 
-for maxcomp=1:12
+for maxcomp=1:1
   if maxcomp ~=maxcompArr
     continue
   end

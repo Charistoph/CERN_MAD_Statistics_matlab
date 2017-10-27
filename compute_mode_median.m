@@ -6,7 +6,7 @@ opt=optimset('display','final','maxiter',10000,'maxfunevals',10000,'tolfun',1e-6
 mode=true;
 medi=true;
 dt = datestr(now,'yyyy.mm.dd_HH_MM_SS');
-maxcompArr = [1,2,4,5,6,8,10,12];
+maxcompArr = [1,2,3,4,5,6,8,10,12];
 
 %===============================================================================
 % main
@@ -90,10 +90,10 @@ function m3=m3function(mixtmode, mixtmean, mixtmedi, maxcomp, resmixtmean, resmi
   m3(10,:)=std(resmixtmedi);    % standard deviation
   m3(11,:)=mad(resmixtmedi,0);    % mean absolute deviation
   m3(12,:)=mad(resmixtmedi,1);    % median absolute deviation
-  m3(10,:)=std(resbaseline);    % standard deviation
-  m3(11,:)=mad(resbaseline,0);    % mean absolute deviation
-  m3(12,:)=mad(resbaseline,1);    % median absolute deviation
-  m3(13,1)=maxcomp;       % test if write works
+  m3(13,:)=std(resbaseline);    % standard deviation
+  m3(14,:)=mad(resbaseline,0);    % mean absolute deviation
+  m3(15,:)=mad(resbaseline,1);    % median absolute deviation
+  m3(16,1)=maxcomp;       % test if write works
   return
 end
 
