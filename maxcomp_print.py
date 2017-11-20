@@ -3,7 +3,7 @@ import csv
 import numpy as np
 import matplotlib.pyplot as plt
 
-workingdir = 'matlab_output_revised_2017.10.18_14_37_42'
+workingdir = 'matlab_output_revised_2017.11.01_10_17_34'
 
 maxcompArr = np.array([1,2,3,4,5,6,8,10,12])
 

@@ -10,9 +10,9 @@ maxcompArr = [1,2,3,4,5,6,8,10,12];
 
 %===============================================================================
 % main
-
+cov
 %for maxcomp=1:12
-for maxcomp=1:1
+for maxcomp=3:12
   if maxcomp ~=maxcompArr
     continue
   end
@@ -21,6 +21,7 @@ for maxcomp=1:1
       itr
       % construct gaussian mixture object
       ncomp=track(itr).ncomp;
+      clear P Mu Sigma;
       for i=1:ncomp
           P(i)=track(itr).comp(i).weight;
           Mu(i,:)=track(itr).comp(i).par';
